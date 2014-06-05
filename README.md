@@ -15,4 +15,4 @@ FMDB查询及结果集封装
 ###4. 执行SQL更新语句：
     BOOL isSuccess = [SLFMDBUtil executeUpdate:sql, ...];
     或
-    BOOL isSuccess = [SLFMDBUtil executeUpdate:sql withArgumentsInArray:params];
+    BOOL isSuccess = [SLFMDBUtil executeUpdate:sql withArgumentsInArray:params]; 
