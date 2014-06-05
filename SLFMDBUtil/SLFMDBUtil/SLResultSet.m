@@ -62,6 +62,10 @@ static NSString *columnIndexToNameKey = @"ColumnIndexToNameKey";
     return [_columnNameToIndexMap count];
 }
 
+- (NSArray *)allColumnName{
+    return [_columnNameToIndexMap allKeys];
+}
+
 - (int)columnIndexForName:(NSString*)columnName{
     return [_columnNameToIndexMap[[columnName lowercaseString]] intValue];
 }

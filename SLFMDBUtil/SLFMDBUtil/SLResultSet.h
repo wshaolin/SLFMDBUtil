@@ -43,6 +43,12 @@
 - (NSUInteger)columnCount;
 
 /**
+ *  结果集的所有列名
+ *
+ */
+- (NSArray *)allColumnName;
+
+/**
  *  根据列名返回对应的列号
  *
  *  @param columnName 列名
