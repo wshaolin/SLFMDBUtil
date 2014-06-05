@@ -1,9 +1,9 @@
-    SLFMDBUtil
-    ==========
-    FMDB查询及结果集封装，依赖FMDB框架和sqlite3，使用时请导入这两个框架。
+SLFMDBUtil
+==========
+FMDB查询及结果集封装，依赖FMDB框架和sqlite3，使用时请导入这两个框架。
     
-    使用方法：
-    ==========
+使用方法：
+==========
 ###1.使用前先修改自己的数据库名和创建表的SQL语句，修改位置如下：
     在SLFMDBUtil.h中的initialize方法中修改数据库名称，在SLFMDBUtil.h中的loadDatabas方法中修改创建表的SQL语句。
 ###2.校验SQL语句是否正确：
