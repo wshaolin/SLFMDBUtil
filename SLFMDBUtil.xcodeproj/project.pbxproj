@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4856FCB194065CF005A3262 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4856FCA194065CF005A3262 /* Foundation.framework */; };
+		D4856FCD194065CF005A3262 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4856FCC194065CF005A3262 /* CoreGraphics.framework */; };
+		D4856FCF194065CF005A3262 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4856FCE194065CF005A3262 /* UIKit.framework */; };
+		D4856FD5194065CF005A3262 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4856FD3194065CF005A3262 /* InfoPlist.strings */; };
+		D4856FD7194065CF005A3262 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4856FD6194065CF005A3262 /* main.m */; };
+		D4856FDB194065CF005A3262 /* SLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4856FDA194065CF005A3262 /* SLAppDelegate.m */; };
+		D4856FDD194065CF005A3262 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4856FDC194065CF005A3262 /* Images.xcassets */; };
+		D4856FE4194065CF005A3262 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4856FE3194065CF005A3262 /* XCTest.framework */; };
+		D4856FE5194065CF005A3262 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4856FCA194065CF005A3262 /* Foundation.framework */; };
+		D4856FE6194065CF005A3262 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4856FCE194065CF005A3262 /* UIKit.framework */; };
+		D4856FEE194065CF005A3262 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4856FEC194065CF005A3262 /* InfoPlist.strings */; };
+		D4856FF0194065CF005A3262 /* SLFMDBUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4856FEF194065CF005A3262 /* SLFMDBUtilTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4856FE7194065CF005A3262 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4856FBF194065CF005A3262 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4856FC6194065CF005A3262;
+			remoteInfo = SLFMDBUtil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4856FC7194065CF005A3262 /* SLFMDBUtil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLFMDBUtil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4856FCA194065CF005A3262 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4856FCC194065CF005A3262 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D4856FCE194065CF005A3262 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D4856FD2194065CF005A3262 /* SLFMDBUtil-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLFMDBUtil-Info.plist"; sourceTree = "<group>"; };
+		D4856FD4194065CF005A3262 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4856FD6194065CF005A3262 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4856FD8194065CF005A3262 /* SLFMDBUtil-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SLFMDBUtil-Prefix.pch"; sourceTree = "<group>"; };
+		D4856FD9194065CF005A3262 /* SLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLAppDelegate.h; sourceTree = "<group>"; };
+		D4856FDA194065CF005A3262 /* SLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAppDelegate.m; sourceTree = "<group>"; };
+		D4856FDC194065CF005A3262 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4856FE2194065CF005A3262 /* SLFMDBUtilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLFMDBUtilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4856FE3194065CF005A3262 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D4856FEB194065CF005A3262 /* SLFMDBUtilTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLFMDBUtilTests-Info.plist"; sourceTree = "<group>"; };
+		D4856FED194065CF005A3262 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4856FEF194065CF005A3262 /* SLFMDBUtilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLFMDBUtilTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4856FC4194065CF005A3262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4856FCD194065CF005A3262 /* CoreGraphics.framework in Frameworks */,
+				D4856FCF194065CF005A3262 /* UIKit.framework in Frameworks */,
+				D4856FCB194065CF005A3262 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4856FDF194065CF005A3262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4856FE4194065CF005A3262 /* XCTest.framework in Frameworks */,
+				D4856FE6194065CF005A3262 /* UIKit.framework in Frameworks */,
+				D4856FE5194065CF005A3262 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4856FBE194065CF005A3262 = {
+			isa = PBXGroup;
+			children = (
+				D4856FD0194065CF005A3262 /* SLFMDBUtil */,
+				D4856FE9194065CF005A3262 /* SLFMDBUtilTests */,
+				D4856FC9194065CF005A3262 /* Frameworks */,
+				D4856FC8194065CF005A3262 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4856FC8194065CF005A3262 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4856FC7194065CF005A3262 /* SLFMDBUtil.app */,
+				D4856FE2194065CF005A3262 /* SLFMDBUtilTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4856FC9194065CF005A3262 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4856FCA194065CF005A3262 /* Foundation.framework */,
+				D4856FCC194065CF005A3262 /* CoreGraphics.framework */,
+				D4856FCE194065CF005A3262 /* UIKit.framework */,
+				D4856FE3194065CF005A3262 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4856FD0194065CF005A3262 /* SLFMDBUtil */ = {
+			isa = PBXGroup;
+			children = (
+				D4856FD9194065CF005A3262 /* SLAppDelegate.h */,
+				D4856FDA194065CF005A3262 /* SLAppDelegate.m */,
+				D4856FDC194065CF005A3262 /* Images.xcassets */,
+				D4856FD1194065CF005A3262 /* Supporting Files */,
+			);
+			path = SLFMDBUtil;
+			sourceTree = "<group>";
+		};
+		D4856FD1194065CF005A3262 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4856FD2194065CF005A3262 /* SLFMDBUtil-Info.plist */,
+				D4856FD3194065CF005A3262 /* InfoPlist.strings */,
+				D4856FD6194065CF005A3262 /* main.m */,
+				D4856FD8194065CF005A3262 /* SLFMDBUtil-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4856FE9194065CF005A3262 /* SLFMDBUtilTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4856FEF194065CF005A3262 /* SLFMDBUtilTests.m */,
+				D4856FEA194065CF005A3262 /* Supporting Files */,
+			);
+			path = SLFMDBUtilTests;
+			sourceTree = "<group>";
+		};
+		D4856FEA194065CF005A3262 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4856FEB194065CF005A3262 /* SLFMDBUtilTests-Info.plist */,
+				D4856FEC194065CF005A3262 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4856FC6194065CF005A3262 /* SLFMDBUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4856FF3194065CF005A3262 /* Build configuration list for PBXNativeTarget "SLFMDBUtil" */;
+			buildPhases = (
+				D4856FC3194065CF005A3262 /* Sources */,
+				D4856FC4194065CF005A3262 /* Frameworks */,
+				D4856FC5194065CF005A3262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLFMDBUtil;
+			productName = SLFMDBUtil;
+			productReference = D4856FC7194065CF005A3262 /* SLFMDBUtil.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4856FE1194065CF005A3262 /* SLFMDBUtilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4856FF6194065CF005A3262 /* Build configuration list for PBXNativeTarget "SLFMDBUtilTests" */;
+			buildPhases = (
+				D4856FDE194065CF005A3262 /* Sources */,
+				D4856FDF194065CF005A3262 /* Frameworks */,
+				D4856FE0194065CF005A3262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4856FE8194065CF005A3262 /* PBXTargetDependency */,
+			);
+			name = SLFMDBUtilTests;
+			productName = SLFMDBUtilTests;
+			productReference = D4856FE2194065CF005A3262 /* SLFMDBUtilTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4856FBF194065CF005A3262 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					D4856FE1194065CF005A3262 = {
+						TestTargetID = D4856FC6194065CF005A3262;
+					};
+				};
+			};
+			buildConfigurationList = D4856FC2194065CF005A3262 /* Build configuration list for PBXProject "SLFMDBUtil" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D4856FBE194065CF005A3262;
+			productRefGroup = D4856FC8194065CF005A3262 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4856FC6194065CF005A3262 /* SLFMDBUtil */,
+				D4856FE1194065CF005A3262 /* SLFMDBUtilTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4856FC5194065CF005A3262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4856FD5194065CF005A3262 /* InfoPlist.strings in Resources */,
+				D4856FDD194065CF005A3262 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4856FE0194065CF005A3262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4856FEE194065CF005A3262 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4856FC3194065CF005A3262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4856FD7194065CF005A3262 /* main.m in Sources */,
+				D4856FDB194065CF005A3262 /* SLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4856FDE194065CF005A3262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4856FF0194065CF005A3262 /* SLFMDBUtilTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4856FE8194065CF005A3262 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4856FC6194065CF005A3262 /* SLFMDBUtil */;
+			targetProxy = D4856FE7194065CF005A3262 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4856FD3194065CF005A3262 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4856FD4194065CF005A3262 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D4856FEC194065CF005A3262 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4856FED194065CF005A3262 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4856FF1194065CF005A3262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4856FF2194065CF005A3262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4856FF4194065CF005A3262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLFMDBUtil/SLFMDBUtil-Prefix.pch";
+				INFOPLIST_FILE = "SLFMDBUtil/SLFMDBUtil-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4856FF5194065CF005A3262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLFMDBUtil/SLFMDBUtil-Prefix.pch";
+				INFOPLIST_FILE = "SLFMDBUtil/SLFMDBUtil-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D4856FF7194065CF005A3262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SLFMDBUtil.app/SLFMDBUtil";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLFMDBUtil/SLFMDBUtil-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SLFMDBUtilTests/SLFMDBUtilTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D4856FF8194065CF005A3262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SLFMDBUtil.app/SLFMDBUtil";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLFMDBUtil/SLFMDBUtil-Prefix.pch";
+				INFOPLIST_FILE = "SLFMDBUtilTests/SLFMDBUtilTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4856FC2194065CF005A3262 /* Build configuration list for PBXProject "SLFMDBUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4856FF1194065CF005A3262 /* Debug */,
+				D4856FF2194065CF005A3262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4856FF3194065CF005A3262 /* Build configuration list for PBXNativeTarget "SLFMDBUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4856FF4194065CF005A3262 /* Debug */,
+				D4856FF5194065CF005A3262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4856FF6194065CF005A3262 /* Build configuration list for PBXNativeTarget "SLFMDBUtilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4856FF7194065CF005A3262 /* Debug */,
+				D4856FF8194065CF005A3262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4856FBF194065CF005A3262 /* Project object */;
+}
