@@ -12,9 +12,9 @@ FMDB查询及结果集封装
    BOOL isValid = [SLFMDBUtil executeStatements:sql];
 
 ###3. 执行SQL查询语句：
-   SLResultSet rs = [SLFMDBUtil executeQuery:sql, ...];
-   或
-   SLResultSet rs = [SLFMDBUtil executeQuery:sql withArgumentsInArray:params];
+    SLResultSet rs = [SLFMDBUtil executeQuery:sql, ...];
+    或
+    SLResultSet rs = [SLFMDBUtil executeQuery:sql withArgumentsInArray:params];
 
 ###4. 执行SQL更新语句：
    BOOL isSuccess = [SLFMDBUtil executeUpdate:sql, ...];
