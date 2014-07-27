@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>97A1FEC1-BE0C-4185-AF0A-954048305524</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SLFMDBUtil</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>73D5600E-6457-4993-8F94-B4127914A5EE</key>
+		<string>https://github.com/wshaolin/SLFMDBUtil.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SLFMDBUtil.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>73D5600E-6457-4993-8F94-B4127914A5EE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wshaolin/SLFMDBUtil.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>73D5600E-6457-4993-8F94-B4127914A5EE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>73D5600E-6457-4993-8F94-B4127914A5EE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SLFMDBUtil</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -48,10 +48,7 @@ static NSString *columnIndexToNameKey = @"ColumnIndexToNameKey";
 
 - (BOOL)next{
     _currentRow ++;
-    if(self.rowCount && _currentRow < self.rowCount){
-        return YES;
-    }
-    return NO;
+    return _currentRow < self.rowCount;
 }
 
 - (NSUInteger)rowCount{
@@ -171,7 +168,7 @@ static NSString *columnIndexToNameKey = @"ColumnIndexToNameKey";
 }
 
 - (NSString *)arrayToString:(NSArray *)array{
-    NSMutableString *ms = [[NSMutableString alloc] init];
+    NSMutableString *ms = [NSMutableString string];
     [ms appendString:@"["];
     for(int i = 0; i < array.count; i ++){
         NSDictionary *dictionary = array[i];
@@ -189,7 +186,7 @@ static NSString *columnIndexToNameKey = @"ColumnIndexToNameKey";
 }
 
 - (NSString *)dictionaryToString:(NSDictionary *)dictionary{
-    NSMutableString *ms = [[NSMutableString alloc] init];
+    NSMutableString *ms = [NSMutableString string];
     NSArray *keys = [dictionary allKeys];
     [ms appendString:@"{\n"];
     for(int i = 0; i < keys.count; i ++){

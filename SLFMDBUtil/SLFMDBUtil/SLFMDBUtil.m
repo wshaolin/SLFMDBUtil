@@ -9,23 +9,22 @@
 #import "SLFMDBUtil.h"
 #import "FMDB.h"
 
+#define DataFilePath [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"data.sqlite"]
+
 @implementation SLFMDBUtil
 
 static FMDatabaseQueue *_queue;
-static NSString *_filePath;
 
 + (void)initialize{
-    _filePath = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"data.sqlite"];
-    
     [self loadDatabase];
 }
 
 + (void)loadDatabase{
     // 如果数据库文件不存在，说明表也不存在，则需要执行SQL语句创建表
-    if(![[NSFileManager defaultManager] fileExistsAtPath:_filePath]){
+    if(![[NSFileManager defaultManager] fileExistsAtPath:DataFilePath]){
         [self loadDatabaseQueue];
         [_queue inDatabase:^(FMDatabase *db) {
-            NSString *sql = @"create table if not exists t_table(id integer primary key autoincrement, content text);";
+            NSString *sql = @"create table if not exists t_cities(id integer primary key autoincrement, name text, pinyin text, isselected integer);";
             NSError *error;
             BOOL isSuccess = [db executeUpdate:sql withErrorAndBindings:&error];
             if(!isSuccess){
@@ -37,7 +36,7 @@ static NSString *_filePath;
 }
 
 + (void)loadDatabaseQueue{
-    _queue = [FMDatabaseQueue databaseQueueWithPath:_filePath];
+    _queue = [FMDatabaseQueue databaseQueueWithPath:DataFilePath];
 }
 
 + (BOOL)executeUpdate:(NSString *)sql, ...{
@@ -105,7 +104,7 @@ static NSString *_filePath;
  */
 + (SLResultSet *)convertResultSet:(FMResultSet *)rs{
     SLResultSet *resultSet = [[SLResultSet alloc] init];
-    [resultSet setColumnNameToIndexMap:[rs.columnNameToIndexMap copy]];
+    [resultSet setColumnNameToIndexMap:rs.columnNameToIndexMap];
     NSMutableArray *resultSetArray = [NSMutableArray array];
     int columnCount = [rs columnCount];
     while ([rs next]) {
